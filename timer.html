@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="theme.css">
+		<script type="text/javascript" src="script.js"></script>
+        <title>Chess Timer</title>
+    </head>
+    <body onLoad="checkQuery()" onKeyDown="switchTurns()" onClick="switchTurns()">
+        <div id="top">
+            <div id="left"><p id="leftTime">0:00.0</p>White</div>
+            <div id="right"><p id="rightTime">0:00.0</p>Black</div>
+        </div>
+        <div id="bottom">
+            <input id="minutes" type="number" placeholder="# minutes">
+            <br>
+            <div id="button" onClick="start()">Start</div>
+        </div>
+    </body>
+</html>
